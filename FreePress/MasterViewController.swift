@@ -88,7 +88,11 @@ class MasterViewController: UITableViewController {
 
 		let currentNews = news[indexPath.row]
 		cell.textLabel!.text = currentNews.title
-		cell.detailTextLabel!.text = currentNews.text
+								let attrStr = try! NSAttributedString(
+										data: currentNews.text.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
+										options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
+										documentAttributes: nil)
+						cell.detailTextLabel!.attributedText = attrStr
 		return cell
 	}
 
