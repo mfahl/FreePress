@@ -93,6 +93,7 @@ class MasterViewController: UITableViewController {
 										options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
 										documentAttributes: nil)
 						cell.detailTextLabel!.attributedText = attrStr
+						cell.imageView!.image = currentNews.image
 		return cell
 	}
 
