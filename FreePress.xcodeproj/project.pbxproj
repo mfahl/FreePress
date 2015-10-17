@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A20BA6B1BD24ED800EEA03D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20BA6A1BD24ED800EEA03D /* AppDelegate.swift */; };
+		5A20BA6D1BD24ED800EEA03D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20BA6C1BD24ED800EEA03D /* MasterViewController.swift */; };
+		5A20BA6F1BD24ED800EEA03D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20BA6E1BD24ED800EEA03D /* DetailViewController.swift */; };
+		5A20BA721BD24ED800EEA03D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A20BA701BD24ED800EEA03D /* Main.storyboard */; };
+		5A20BA741BD24ED800EEA03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A20BA731BD24ED800EEA03D /* Assets.xcassets */; };
+		5A20BA771BD24ED800EEA03D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A20BA751BD24ED800EEA03D /* LaunchScreen.storyboard */; };
+		5A20BA821BD24ED800EEA03D /* FreePressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20BA811BD24ED800EEA03D /* FreePressTests.swift */; };
+		5A20BA8D1BD24ED800EEA03D /* FreePressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20BA8C1BD24ED800EEA03D /* FreePressUITests.swift */; };
+		5A20BA9C1BD24F7E00EEA03D /* NewsMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20BA9B1BD24F7E00EEA03D /* NewsMaterial.swift */; settings = {ASSET_TAGS = (); }; };
+		5A20BA9E1BD24FE600EEA03D /* AuthorMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20BA9D1BD24FE600EEA03D /* AuthorMaterial.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A20BA7E1BD24ED800EEA03D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A20BA5F1BD24ED800EEA03D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A20BA661BD24ED800EEA03D;
+			remoteInfo = FreePress;
+		};
+		5A20BA891BD24ED800EEA03D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A20BA5F1BD24ED800EEA03D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A20BA661BD24ED800EEA03D;
+			remoteInfo = FreePress;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A20BA671BD24ED800EEA03D /* FreePress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreePress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A20BA6A1BD24ED800EEA03D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A20BA6C1BD24ED800EEA03D /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		5A20BA6E1BD24ED800EEA03D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5A20BA711BD24ED800EEA03D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A20BA731BD24ED800EEA03D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A20BA761BD24ED800EEA03D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A20BA781BD24ED800EEA03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A20BA7D1BD24ED800EEA03D /* FreePressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreePressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A20BA811BD24ED800EEA03D /* FreePressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePressTests.swift; sourceTree = "<group>"; };
+		5A20BA831BD24ED800EEA03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A20BA881BD24ED800EEA03D /* FreePressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreePressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A20BA8C1BD24ED800EEA03D /* FreePressUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePressUITests.swift; sourceTree = "<group>"; };
+		5A20BA8E1BD24ED800EEA03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A20BA9B1BD24F7E00EEA03D /* NewsMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsMaterial.swift; path = Material/NewsMaterial.swift; sourceTree = "<group>"; };
+		5A20BA9D1BD24FE600EEA03D /* AuthorMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorMaterial.swift; path = Material/AuthorMaterial.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A20BA641BD24ED800EEA03D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A20BA7A1BD24ED800EEA03D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A20BA851BD24ED800EEA03D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A20BA5E1BD24ED800EEA03D = {
+			isa = PBXGroup;
+			children = (
+				5A20BA691BD24ED800EEA03D /* FreePress */,
+				5A20BA801BD24ED800EEA03D /* FreePressTests */,
+				5A20BA8B1BD24ED800EEA03D /* FreePressUITests */,
+				5A20BA681BD24ED800EEA03D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A20BA681BD24ED800EEA03D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A20BA671BD24ED800EEA03D /* FreePress.app */,
+				5A20BA7D1BD24ED800EEA03D /* FreePressTests.xctest */,
+				5A20BA881BD24ED800EEA03D /* FreePressUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A20BA691BD24ED800EEA03D /* FreePress */ = {
+			isa = PBXGroup;
+			children = (
+				5A20BA9A1BD24F6100EEA03D /* Material */,
+				5A20BA6A1BD24ED800EEA03D /* AppDelegate.swift */,
+				5A20BA6C1BD24ED800EEA03D /* MasterViewController.swift */,
+				5A20BA6E1BD24ED800EEA03D /* DetailViewController.swift */,
+				5A20BA701BD24ED800EEA03D /* Main.storyboard */,
+				5A20BA731BD24ED800EEA03D /* Assets.xcassets */,
+				5A20BA751BD24ED800EEA03D /* LaunchScreen.storyboard */,
+				5A20BA781BD24ED800EEA03D /* Info.plist */,
+			);
+			path = FreePress;
+			sourceTree = "<group>";
+		};
+		5A20BA801BD24ED800EEA03D /* FreePressTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A20BA811BD24ED800EEA03D /* FreePressTests.swift */,
+				5A20BA831BD24ED800EEA03D /* Info.plist */,
+			);
+			path = FreePressTests;
+			sourceTree = "<group>";
+		};
+		5A20BA8B1BD24ED800EEA03D /* FreePressUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A20BA8C1BD24ED800EEA03D /* FreePressUITests.swift */,
+				5A20BA8E1BD24ED800EEA03D /* Info.plist */,
+			);
+			path = FreePressUITests;
+			sourceTree = "<group>";
+		};
+		5A20BA9A1BD24F6100EEA03D /* Material */ = {
+			isa = PBXGroup;
+			children = (
+				5A20BA9B1BD24F7E00EEA03D /* NewsMaterial.swift */,
+				5A20BA9D1BD24FE600EEA03D /* AuthorMaterial.swift */,
+			);
+			name = Material;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A20BA661BD24ED800EEA03D /* FreePress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A20BA911BD24ED800EEA03D /* Build configuration list for PBXNativeTarget "FreePress" */;
+			buildPhases = (
+				5A20BA631BD24ED800EEA03D /* Sources */,
+				5A20BA641BD24ED800EEA03D /* Frameworks */,
+				5A20BA651BD24ED800EEA03D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FreePress;
+			productName = FreePress;
+			productReference = 5A20BA671BD24ED800EEA03D /* FreePress.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A20BA7C1BD24ED800EEA03D /* FreePressTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A20BA941BD24ED800EEA03D /* Build configuration list for PBXNativeTarget "FreePressTests" */;
+			buildPhases = (
+				5A20BA791BD24ED800EEA03D /* Sources */,
+				5A20BA7A1BD24ED800EEA03D /* Frameworks */,
+				5A20BA7B1BD24ED800EEA03D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A20BA7F1BD24ED800EEA03D /* PBXTargetDependency */,
+			);
+			name = FreePressTests;
+			productName = FreePressTests;
+			productReference = 5A20BA7D1BD24ED800EEA03D /* FreePressTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A20BA871BD24ED800EEA03D /* FreePressUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A20BA971BD24ED800EEA03D /* Build configuration list for PBXNativeTarget "FreePressUITests" */;
+			buildPhases = (
+				5A20BA841BD24ED800EEA03D /* Sources */,
+				5A20BA851BD24ED800EEA03D /* Frameworks */,
+				5A20BA861BD24ED800EEA03D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A20BA8A1BD24ED800EEA03D /* PBXTargetDependency */,
+			);
+			name = FreePressUITests;
+			productName = FreePressUITests;
+			productReference = 5A20BA881BD24ED800EEA03D /* FreePressUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A20BA5F1BD24ED800EEA03D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = MartinMarc;
+				TargetAttributes = {
+					5A20BA661BD24ED800EEA03D = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					5A20BA7C1BD24ED800EEA03D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 5A20BA661BD24ED800EEA03D;
+					};
+					5A20BA871BD24ED800EEA03D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 5A20BA661BD24ED800EEA03D;
+					};
+				};
+			};
+			buildConfigurationList = 5A20BA621BD24ED800EEA03D /* Build configuration list for PBXProject "FreePress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A20BA5E1BD24ED800EEA03D;
+			productRefGroup = 5A20BA681BD24ED800EEA03D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A20BA661BD24ED800EEA03D /* FreePress */,
+				5A20BA7C1BD24ED800EEA03D /* FreePressTests */,
+				5A20BA871BD24ED800EEA03D /* FreePressUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A20BA651BD24ED800EEA03D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A20BA771BD24ED800EEA03D /* LaunchScreen.storyboard in Resources */,
+				5A20BA741BD24ED800EEA03D /* Assets.xcassets in Resources */,
+				5A20BA721BD24ED800EEA03D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A20BA7B1BD24ED800EEA03D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A20BA861BD24ED800EEA03D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A20BA631BD24ED800EEA03D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A20BA6F1BD24ED800EEA03D /* DetailViewController.swift in Sources */,
+				5A20BA9E1BD24FE600EEA03D /* AuthorMaterial.swift in Sources */,
+				5A20BA9C1BD24F7E00EEA03D /* NewsMaterial.swift in Sources */,
+				5A20BA6D1BD24ED800EEA03D /* MasterViewController.swift in Sources */,
+				5A20BA6B1BD24ED800EEA03D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A20BA791BD24ED800EEA03D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A20BA821BD24ED800EEA03D /* FreePressTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A20BA841BD24ED800EEA03D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A20BA8D1BD24ED800EEA03D /* FreePressUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A20BA7F1BD24ED800EEA03D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A20BA661BD24ED800EEA03D /* FreePress */;
+			targetProxy = 5A20BA7E1BD24ED800EEA03D /* PBXContainerItemProxy */;
+		};
+		5A20BA8A1BD24ED800EEA03D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A20BA661BD24ED800EEA03D /* FreePress */;
+			targetProxy = 5A20BA891BD24ED800EEA03D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A20BA701BD24ED800EEA03D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A20BA711BD24ED800EEA03D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A20BA751BD24ED800EEA03D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A20BA761BD24ED800EEA03D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A20BA8F1BD24ED800EEA03D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A20BA901BD24ED800EEA03D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A20BA921BD24ED800EEA03D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FreePress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MartinMarc.FreePress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A20BA931BD24ED800EEA03D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FreePress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MartinMarc.FreePress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5A20BA951BD24ED800EEA03D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FreePressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MartinMarc.FreePressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreePress.app/FreePress";
+			};
+			name = Debug;
+		};
+		5A20BA961BD24ED800EEA03D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FreePressTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MartinMarc.FreePressTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreePress.app/FreePress";
+			};
+			name = Release;
+		};
+		5A20BA981BD24ED800EEA03D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FreePressUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MartinMarc.FreePressUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FreePress;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5A20BA991BD24ED800EEA03D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FreePressUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MartinMarc.FreePressUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FreePress;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A20BA621BD24ED800EEA03D /* Build configuration list for PBXProject "FreePress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A20BA8F1BD24ED800EEA03D /* Debug */,
+				5A20BA901BD24ED800EEA03D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A20BA911BD24ED800EEA03D /* Build configuration list for PBXNativeTarget "FreePress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A20BA921BD24ED800EEA03D /* Debug */,
+				5A20BA931BD24ED800EEA03D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A20BA941BD24ED800EEA03D /* Build configuration list for PBXNativeTarget "FreePressTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A20BA951BD24ED800EEA03D /* Debug */,
+				5A20BA961BD24ED800EEA03D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A20BA971BD24ED800EEA03D /* Build configuration list for PBXNativeTarget "FreePressUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A20BA981BD24ED800EEA03D /* Debug */,
+				5A20BA991BD24ED800EEA03D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A20BA5F1BD24ED800EEA03D /* Project object */;
+}
