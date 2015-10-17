@@ -16,4 +16,9 @@ class NewsMaterial {
 		self.title = title
 		self.text = text
 	}
+	
+	init(json: NSDictionary) {
+			self.title = json["title"] as! String
+			self.text = json["text"] as! String
+	}
 }

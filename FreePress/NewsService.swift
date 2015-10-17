@@ -11,14 +11,14 @@ class NewsService {
 	class func getAll() -> [NewsMaterial] {
 		var news = [NewsMaterial]()
 		
-		let endpoint = NSURL(string: "https://raw.githubusercontent.com/mfahl/FreePress/master/newsdata.json")
+		let endpoint = NSURL(string: "http://meton.dynamicmetonsolutions.com/~msf/newsdata.json")
 		let data = NSData(contentsOfURL: endpoint!)
 		
 		do {
 			if let json: NSDictionary = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary {
 						if let items = json["news"] as? NSArray {
 								for item in items {
-										print(item)
+										news.append(NewsMaterial(json: item as! NSDictionary))
 								}
 						}
 				}

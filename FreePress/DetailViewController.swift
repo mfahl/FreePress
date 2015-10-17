@@ -24,7 +24,11 @@ class DetailViewController: UIViewController {
 		// Update the user interface for the detail item.
 		if let detail = self.detailItem {
 		    if let label = self.detailDescriptionLabel {
-		        label.text = detail.text
+						let attrStr = try! NSAttributedString(
+										data: detail.text.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
+										options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
+										documentAttributes: nil)
+						label.attributedText = attrStr
 						label.numberOfLines = 0
 						label.sizeToFit()
 		    }
