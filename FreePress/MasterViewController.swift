@@ -16,6 +16,11 @@ class MasterViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		self.navigationController?.navigationBar.tintColor = ColorSchemeProvider.accent()
+		UINavigationBar.appearance().barTintColor = ColorSchemeProvider.lightBackground()
+		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.blackColor()]
+		UINavigationBar.appearance().translucent = false
+		
 		tableView.backgroundView = BackgroundView()
 		// Do any additional setup after loading the view, typically from a nib.
 		self.navigationItem.leftBarButtonItem = self.editButtonItem()
@@ -83,6 +88,7 @@ class MasterViewController: UITableViewController {
 
 		let currentNews = news[indexPath.row]
 		cell.textLabel!.text = currentNews.title
+		cell.detailTextLabel!.text = currentNews.text
 		return cell
 	}
 

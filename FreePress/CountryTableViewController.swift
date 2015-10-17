@@ -26,6 +26,7 @@ class CountryTableViewController: UITableViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+				self.navigationController?.navigationBar.tintColor = ColorSchemeProvider.accent()
 				self.configureView()
 				
         // Uncomment the following line to preserve selection between presentations

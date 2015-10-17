@@ -14,6 +14,7 @@ class SearchViewController: UITableViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		self.navigationController?.navigationBar.tintColor = ColorSchemeProvider.accent()
 		continents = ContinentService.getAll()
 		title = "Continents"
 	}

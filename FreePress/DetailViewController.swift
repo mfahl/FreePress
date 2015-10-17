@@ -38,6 +38,7 @@ class DetailViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		self.navigationController?.navigationBar.tintColor = ColorSchemeProvider.accent()
 		// Do any additional setup after loading the view, typically from a nib.
 		self.configureView()
 	}
