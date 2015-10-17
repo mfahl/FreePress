@@ -17,6 +17,7 @@
 		5A20BA8D1BD24ED800EEA03D /* FreePressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20BA8C1BD24ED800EEA03D /* FreePressUITests.swift */; };
 		5A20BA9C1BD24F7E00EEA03D /* NewsMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20BA9B1BD24F7E00EEA03D /* NewsMaterial.swift */; settings = {ASSET_TAGS = (); }; };
 		5A20BA9E1BD24FE600EEA03D /* AuthorMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A20BA9D1BD24FE600EEA03D /* AuthorMaterial.swift */; settings = {ASSET_TAGS = (); }; };
+		5AA9585F1BD251100085BFC2 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9585E1BD251100085BFC2 /* NewsService.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5A20BA8E1BD24ED800EEA03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A20BA9B1BD24F7E00EEA03D /* NewsMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsMaterial.swift; path = Material/NewsMaterial.swift; sourceTree = "<group>"; };
 		5A20BA9D1BD24FE600EEA03D /* AuthorMaterial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorMaterial.swift; path = Material/AuthorMaterial.swift; sourceTree = "<group>"; };
+		5AA9585E1BD251100085BFC2 /* NewsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		5A20BA691BD24ED800EEA03D /* FreePress */ = {
 			isa = PBXGroup;
 			children = (
+				5AA9585D1BD250FA0085BFC2 /* Service */,
 				5A20BA9A1BD24F6100EEA03D /* Material */,
 				5A20BA6A1BD24ED800EEA03D /* AppDelegate.swift */,
 				5A20BA6C1BD24ED800EEA03D /* MasterViewController.swift */,
@@ -140,6 +143,14 @@
 				5A20BA9D1BD24FE600EEA03D /* AuthorMaterial.swift */,
 			);
 			name = Material;
+			sourceTree = "<group>";
+		};
+		5AA9585D1BD250FA0085BFC2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5AA9585E1BD251100085BFC2 /* NewsService.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AA9585F1BD251100085BFC2 /* NewsService.swift in Sources */,
 				5A20BA6F1BD24ED800EEA03D /* DetailViewController.swift in Sources */,
 				5A20BA9E1BD24FE600EEA03D /* AuthorMaterial.swift in Sources */,
 				5A20BA9C1BD24F7E00EEA03D /* NewsMaterial.swift in Sources */,
@@ -501,6 +513,7 @@
 				5A20BA931BD24ED800EEA03D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A20BA941BD24ED800EEA03D /* Build configuration list for PBXNativeTarget "FreePressTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +522,7 @@
 				5A20BA961BD24ED800EEA03D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A20BA971BD24ED800EEA03D /* Build configuration list for PBXNativeTarget "FreePressUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +531,7 @@
 				5A20BA991BD24ED800EEA03D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
