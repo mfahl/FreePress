@@ -9,14 +9,12 @@
 import UIKit
 class SearchViewController: UITableViewController {
 	var detailViewController: DetailViewController? = nil
-	var continents = [String]()
+	var continents = [ContinentMaterial]()
 
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		continents.append("Europe")
-		continents.append("Asia")
-		continents.append("Africa")
+		continents = ContinentService.getAll()
 		title = "Continents"
 	}
 
@@ -35,7 +33,7 @@ class SearchViewController: UITableViewController {
 		let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
 		let continent = continents[indexPath.row]
-		cell.textLabel!.text = continent
+		cell.textLabel!.text = continent.name
 		return cell
 	}
 

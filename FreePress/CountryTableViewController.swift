@@ -9,16 +9,19 @@
 import UIKit
 
 class CountryTableViewController: UITableViewController {
+		var countries: [CountryMaterial] = [CountryMaterial]()
+	
 		// the contintent the countries are in
-		var continent: String? {
+		var continent: ContinentMaterial? {
 			didSet {
+				countries = continent!.countries
 		    // Update the view.
 		    self.configureView()
 			}
 		}
 	
 		func configureView() {
-			title = continent
+			title = continent?.name
 		}
 	
     override func viewDidLoad() {
@@ -39,16 +42,35 @@ class CountryTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+	override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+		return 1
+	}
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		return countries.count
+	}
 
+	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+
+		let country = countries[indexPath.row]
+		cell.textLabel!.text = country.name
+		return cell
+	}
+
+	override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+		// Return false if you do not want the specified item to be editable.
+		return true
+	}
+
+	override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+		if editingStyle == .Delete {
+		    countries.removeAtIndex(indexPath.row)
+		    tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+		} else if editingStyle == .Insert {
+		    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+		}
+	}
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
