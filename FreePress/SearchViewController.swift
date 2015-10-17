@@ -17,6 +17,7 @@ class SearchViewController: UITableViewController {
 		continents.append("Europe")
 		continents.append("Asia")
 		continents.append("Africa")
+		title = "Continents"
 	}
 
 
@@ -49,6 +50,18 @@ class SearchViewController: UITableViewController {
 		    tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
 		} else if editingStyle == .Insert {
 		    // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+		}
+	}
+
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if segue.identifier == "showDetail" {
+		    if let indexPath = self.tableView.indexPathForSelectedRow {
+		        let object = continents[indexPath.row]
+		        let controller = (segue.destinationViewController as! UINavigationController).topViewController as! CountryTableViewController
+		        controller.continent = object
+		        controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+		        controller.navigationItem.leftItemsSupplementBackButton = true
+		    }
 		}
 	}
 
